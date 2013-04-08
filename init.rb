@@ -9,7 +9,7 @@ Redmine::Plugin.register :redmine_global_issues do
   requires_redmine :version_or_higher => '2.0.0'
   version '0.1.0'
   
-  menu :top_menu, :issues, :caption => :label_issue_plural, "/issues"
-  menu :top_menu, :calendar, :caption => :label_calendar, "/issues/calendar"
+  menu :top_menu, :issues, "/issues", :caption => :label_issue_plural
+  menu :top_menu, :calendar, "/issues/calendar", :caption => :label_calendar
 end
 
